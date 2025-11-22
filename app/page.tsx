@@ -135,11 +135,11 @@ export default function Portfolio() {
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <a
-              href="mailto:everestqa@gmail.com"
+              href="mailto:lacieverest@gmail.com"
               className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20 transition"
             >
               <Mail className="w-4 h-4" />
-              everestqa@gmail.com
+              lacieverest@gmail.com
             </a>
             <a
               href="https://linkedin.com/in/everest-laci-89b993377"
@@ -311,7 +311,7 @@ export default function Portfolio() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="mailto:everestqa@gmail.com"
+              href="mailto:lacieverest@gmail.com"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition flex items-center gap-2"
             >
               <Mail className="w-5 h-5" />
