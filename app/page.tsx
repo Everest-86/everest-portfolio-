@@ -9,6 +9,9 @@ import {
   TestTube,
   Cpu,
   CheckCircle,
+  Phone,
+  GraduationCap,
+  Award,
 } from "lucide-react";
 
 export default function Portfolio() {
@@ -17,7 +20,7 @@ export default function Portfolio() {
       title: "Software Development Engineer in Test (SDET)",
       company: "Allstate",
       type: "Contract",
-      duration: "Jun 2021 - Present · 4 yrs 6 mos",
+      duration: "June 2021 - Present",
       location: "Northfield, IL · Remote",
       achievements: [
         "Engaged with development teams to optimize system architecture and integrate SDLC/STLC frameworks, enhancing overall product quality and reducing critical defect recurrence",
@@ -26,48 +29,70 @@ export default function Portfolio() {
         "Automated data validation processes by integrating SQL scripts into testing workflows, streamlining operations and reducing manual effort",
         "Detected and addressed over 70 front-end bugs, improving system stability and delivering consistent user experience across platforms",
       ],
-      skills: ["Java", "Selenium", "Cucumber", "SQL", "JDBC", "BDD"],
+      skills: ["Java", "Selenium", "Cucumber", "JDBC", "BDD", "SQL", "Jenkins"],
     },
     {
       title: "QA Engineer",
-      company: "KHealth",
+      company: "K Health",
       type: "Full-time",
-      duration: "Feb 2019 - Jun 2021 · 2 yrs 5 mos",
+      duration: "Feb 2019 - June 2021",
       location: "New York, NY · Remote",
       achievements: [
-        "Automated critical flows for patient-facing healthcare applications",
-        "Ran performance checks and validated backend data using SQL",
-        "Collaborated with doctors and data teams on clinical workflows",
-        "Implemented comprehensive testing strategies for healthcare compliance",
+        "Collaborated with developers to create comprehensive test plans, ensuring thorough validation of website functionality and preventing production issues",
+        "Captured and tracked over 250 defects using JIRA, providing precise reproduction steps to support efficient debugging and resolution processes",
+        "Performed API testing and integrated automated tests for RESTful web services using Postman and Rest-Assured",
+        "Managed version control and streamlined code collaboration through Git and GitHub",
+        "Validated database integrity by executing 100+ complex SQL queries on MySQL and participated in daily Agile/Scrum ceremonies to align with project milestones and development goals",
       ],
-      skills: ["SDLC", "Gherkin", "API Testing", "Healthcare QA"],
+      skills: [
+        "JIRA",
+        "Postman",
+        "Rest-Assured",
+        "MySQL",
+        "Git",
+        "Agile/Scrum",
+      ],
     },
   ];
 
   const skills = [
     {
-      category: "Automation",
+      category: "Languages",
+      items: ["Java", "SQL", "Gherkin"],
+    },
+    {
+      category: "Automation Tools",
+      items: ["Selenium WebDriver", "REST-Assured", "JDBC", "Jenkins"],
+    },
+    {
+      category: "Testing Frameworks",
+      items: ["Cucumber", "TestNG", "JUnit", "BDD", "TDD", "DDT"],
+    },
+    {
+      category: "Testing Types",
       items: [
-        "Selenium WebDriver",
-        "Playwright",
-        "Cucumber BDD",
-        "TestNG",
-        "JUnit",
+        "Manual Testing",
+        "Automated Testing",
+        "Smoke Testing",
+        "Regression Testing",
+        "Functional Testing",
+        "Back-End Testing",
       ],
     },
     {
-      category: "API Testing",
-      items: ["Postman", "Rest-Assured", "API Validation"],
+      category: "Database & Tools",
+      items: ["SQL", "PostgreSQL", "MySQL", "JIRA", "Postman", "Eclipse"],
     },
     {
-      category: "CI/CD",
-      items: ["Jenkins", "GitHub Actions", "Pipeline Automation"],
-    },
-    { category: "Databases", items: ["MySQL", "PostgreSQL", "SQL", "JDBC"] },
-    { category: "Languages", items: ["Java", "JavaScript", "Gherkin"] },
-    {
-      category: "Tools & Methods",
-      items: ["Git/GitHub", "Agile/Scrum", "SDLC/STLC", "AWS Basics"],
+      category: "Development Tools",
+      items: [
+        "Maven",
+        "Page Object Model",
+        "Git",
+        "GitHub",
+        "Agile/Scrum",
+        "Waterfall",
+      ],
     },
   ];
 
@@ -78,27 +103,29 @@ export default function Portfolio() {
         "A modular framework using Java, TestNG, Page Object Model, and Jenkins CI",
       highlights: [
         "Reusable components for API + UI validation",
-        "Real-time HTML reporting",
-        "Reduced manual regression by 70%",
+        "Real-time HTML reporting with comprehensive test results",
+        "Reduced manual regression testing by 70%",
+        "Integrated with Maven for dependency management",
       ],
     },
     {
       title: "API Automation with Rest-Assured",
       description:
-        "Created a full API suite with environment switching and payload validation",
+        "Comprehensive API test suite with environment switching and payload validation",
       highlights: [
-        "Comprehensive endpoint coverage",
-        "Automated data-driven testing",
-        "Integration with CI/CD pipeline",
+        "End-to-end RESTful API testing coverage",
+        "Automated data-driven testing scenarios",
+        "Integration with CI/CD pipeline for continuous testing",
       ],
     },
     {
-      title: "Playwright UI Smoke Suite",
-      description: "Fast cross-browser smoke tests running on GitHub Actions",
+      title: "BDD Framework with Cucumber",
+      description:
+        "Behavior-Driven Development framework supporting business-readable test scenarios",
       highlights: [
-        "Multi-browser support",
-        "Parallel execution",
-        "Quick feedback loop",
+        "50+ automated test scripts in Gherkin syntax",
+        "Improved collaboration between QA and business teams",
+        "Enhanced test coverage and documentation",
       ],
     },
   ];
@@ -124,22 +151,30 @@ export default function Portfolio() {
                 Everest Laci
               </h1>
               <p className="text-xl text-blue-100 mt-2">
-                QA Automation Engineer • SDET
+                Software QA Engineer • SDET
               </p>
             </div>
           </div>
           <p className="text-lg text-blue-50 max-w-3xl mt-6">
-            6+ years of experience building scalable test automation frameworks
-            • API & UI Automation • CI/CD Integration • SQL Data Validation •
-            Agile Environments
+            6+ years of experience in Quality Assurance specializing in
+            automated testing of web applications • Selenium WebDriver •
+            Cucumber BDD • Java • API Testing • CI/CD Integration • SQL Data
+            Validation
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <a
-              href="mailto:lacieverest@gmail.com"
+              href="mailto:everest.lacie@gmail.com"
               className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20 transition"
             >
               <Mail className="w-4 h-4" />
-              lacieverest@gmail.com
+              everest.lacie@gmail.com
+            </a>
+            <a
+              href="tel:9783354443"
+              className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20 transition"
+            >
+              <Phone className="w-4 h-4" />
+              978-335-4443
             </a>
             <a
               href="https://linkedin.com/in/everest-laci-89b993377"
@@ -152,31 +187,35 @@ export default function Portfolio() {
             </a>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
               <MapPin className="w-4 h-4" />
-              Boston, MA
+              Swampscott, MA
             </div>
           </div>
         </div>
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-16 space-y-20">
-        {/* About */}
+        {/* Summary */}
         <section className="scroll-mt-20">
           <h2 className="text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
             <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
               <Cpu className="w-6 h-6 text-blue-600" />
             </div>
-            About Me
+            Professional Summary
           </h2>
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
             <p className="text-lg leading-relaxed text-gray-700">
-              I am a QA Automation Engineer with 6+ years of experience across
-              finance, insurance, and healthcare industries. I specialize in
-              designing scalable test automation frameworks, enhancing CI/CD
-              pipelines, validating complex datasets with SQL, and ensuring
-              high-quality releases for web and mobile applications. My
-              expertise spans Selenium WebDriver, Rest-Assured, Playwright,
-              Cucumber BDD, Jenkins, GitHub Actions, and comprehensive API/test
-              data validation strategies.
+              QA Automation Engineer with 6+ years of experience in Quality
+              Assurance, specializing in both manual and automated testing of
+              web applications. Gained initial QA experience on the job and
+              later deepened this expertise through a comprehensive QA
+              Automation bootcamp. Proficient in Selenium WebDriver, Cucumber,
+              Java, TestNG, Apache POI, and Maven. Experienced in functional,
+              regression, smoke, and API testing. Adept at implementing and
+              maintaining automation frameworks, leveraging tools like JUnit,
+              Cucumber, and various API testing utilities to ensure software
+              quality. Well-versed in both Agile (Scrum) and Waterfall
+              methodologies, with a strong focus on delivering robust, scalable,
+              and high-quality software solutions.
             </p>
           </div>
         </section>
@@ -237,7 +276,7 @@ export default function Portfolio() {
                       {exp.company} · {exp.type}
                     </p>
                   </div>
-                  <div className="text-right">
+                  <div className="text-left md:text-right">
                     <p className="text-gray-600 font-medium">{exp.duration}</p>
                     <p className="text-gray-500 text-sm mt-1">{exp.location}</p>
                   </div>
@@ -302,6 +341,46 @@ export default function Portfolio() {
           </div>
         </section>
 
+        {/* Education */}
+        <section className="scroll-mt-20">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+            <div className="w-10 h-10 bg-yellow-100 rounded-lg flex items-center justify-center">
+              <GraduationCap className="w-6 h-6 text-yellow-600" />
+            </div>
+            Education
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition">
+              <div className="flex items-start gap-3 mb-3">
+                <Award className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    Master of Arts in Archaeology
+                  </h3>
+                  <p className="text-blue-600 font-semibold mt-1">
+                    University of Tirana
+                  </p>
+                  <p className="text-gray-500 text-sm mt-1">Tirana, Albania</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition">
+              <div className="flex items-start gap-3 mb-3">
+                <Award className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900">
+                    Bachelor of Arts in History
+                  </h3>
+                  <p className="text-blue-600 font-semibold mt-1">
+                    University of Tirana
+                  </p>
+                  <p className="text-gray-500 text-sm mt-1">Tirana, Albania</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Contact CTA */}
         <section className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-2xl p-12 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
@@ -311,11 +390,18 @@ export default function Portfolio() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="mailto:lacieverest@gmail.com"
+              href="mailto:everest.lacie@gmail.com"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition flex items-center gap-2"
             >
               <Mail className="w-5 h-5" />
               Email Me
+            </a>
+            <a
+              href="tel:9783354443"
+              className="bg-white/10 backdrop-blur-sm text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-2"
+            >
+              <Phone className="w-5 h-5" />
+              Call Me
             </a>
             <a
               href="https://linkedin.com/in/everest-laci-89b993377"
@@ -334,7 +420,7 @@ export default function Portfolio() {
       <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p>© 2025 Everest Laci. All rights reserved.</p>
-          <p className="text-sm mt-2">All softwares need QA</p>
+          <p className="text-sm mt-2">Built with React & Tailwind CSS</p>
         </div>
       </footer>
     </div>
