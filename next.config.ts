@@ -1,7 +1,7 @@
 
 const nextConfig = {
   output: 'export',
-  basePath: '',
+  basePath: '/everest-portfolio-',
   images: { unoptimized: true }
 }
 
