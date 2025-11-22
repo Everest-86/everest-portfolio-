@@ -420,7 +420,7 @@ export default function Portfolio() {
       <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p>© 2025 Everest Laci. All rights reserved.</p>
-          <p className="text-sm mt-2">Built with React & Tailwind CSS</p>
+          <p className="text-sm mt-2">All softwares need QA</p>
         </div>
       </footer>
     </div>
