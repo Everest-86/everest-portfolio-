@@ -111,7 +111,7 @@ export default function Portfolio() {
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8 mb-4">
             <div className="relative">
               <img
-                src="/everest.jpg"
+                src="https://everest-86.github.io/everest-portfolio-/everest.jpg"
                 alt="Everest Laci"
                 className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-white/30 shadow-2xl"
               />
@@ -334,7 +334,7 @@ export default function Portfolio() {
       <footer className="bg-gray-900 text-gray-400 py-8">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <p>© 2025 Everest Laci. All rights reserved.</p>
-          <p className="text-sm mt-2">Built with React & Tailwind CSS</p>
+          <p className="text-sm mt-2">All softwares need QA</p>
         </div>
       </footer>
     </div>
