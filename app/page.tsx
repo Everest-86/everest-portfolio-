@@ -12,16 +12,17 @@ import {
   Phone,
   GraduationCap,
   Award,
+  Brain,
 } from "lucide-react";
 
 export default function Portfolio() {
   const experiences = [
     {
-      title: "Software Development Engineer in Test (SDET)",
+      title: "QA Automation Engineer",
       company: "Allstate",
-      type: "Contract",
-      duration: "June 2021 - Present",
-      location: "Northfield, IL · Remote",
+      type: "",
+      duration: "November 2022 - Present",
+      location: "Northfield, IL",
       achievements: [
         "Engaged with development teams to optimize system architecture and integrate SDLC/STLC frameworks, enhancing overall product quality and reducing critical defect recurrence",
         "Created automated JDBC tests to verify database connectivity and strengthen data validation",
@@ -34,9 +35,9 @@ export default function Portfolio() {
     {
       title: "QA Engineer",
       company: "K Health",
-      type: "Full-time",
-      duration: "Feb 2019 - June 2021",
-      location: "New York, NY · Remote",
+      type: "",
+      duration: "March 2020 - November 2022",
+      location: "New York, NY",
       achievements: [
         "Collaborated with developers to create comprehensive test plans, ensuring thorough validation of website functionality and preventing production issues",
         "Captured and tracked over 250 defects using JIRA, providing precise reproduction steps to support efficient debugging and resolution processes",
@@ -77,11 +78,20 @@ export default function Portfolio() {
         "Regression Testing",
         "Functional Testing",
         "Back-End Testing",
+        "Cross Browser",
       ],
     },
     {
       category: "Database & Tools",
-      items: ["SQL", "PostgreSQL", "MySQL", "JIRA", "Postman", "Eclipse"],
+      items: [
+        "SQL",
+        "PostgreSQL",
+        "MySQL",
+        "JIRA",
+        "Postman",
+        "Eclipse",
+        "MySQL Workbench",
+      ],
     },
     {
       category: "Development Tools",
@@ -93,6 +103,10 @@ export default function Portfolio() {
         "Agile/Scrum",
         "Waterfall",
       ],
+    },
+    {
+      category: "AI Tools",
+      items: ["ChatGPT", "Copilot", "Google Gemini"],
     },
   ];
 
@@ -150,31 +164,29 @@ export default function Portfolio() {
               <h1 className="text-5xl font-bold tracking-tight">
                 Everest Laci
               </h1>
-              <p className="text-xl text-blue-100 mt-2">
-                Software QA Engineer • SDET
-              </p>
+              <p className="text-xl text-blue-100 mt-2">Software QA Engineer</p>
             </div>
           </div>
           <p className="text-lg text-blue-50 max-w-3xl mt-6">
-            6+ years of experience in Quality Assurance specializing in
+            5+ years of experience in Quality Assurance specializing in
             automated testing of web applications • Selenium WebDriver •
             Cucumber BDD • Java • API Testing • CI/CD Integration • SQL Data
             Validation
           </p>
           <div className="flex flex-wrap gap-4 mt-8">
             <a
-              href="mailto:everest.lacie@gmail.com"
+              href="mailto:everestslaci@gmail.com"
               className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20 transition"
             >
               <Mail className="w-4 h-4" />
-              everest.lacie@gmail.com
+              everestslaci@gmail.com
             </a>
             <a
-              href="tel:9783354443"
+              href="tel:7744337857"
               className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20 transition"
             >
               <Phone className="w-4 h-4" />
-              978-335-4443
+              774-433-7857
             </a>
             <a
               href="https://linkedin.com/in/everest-laci-89b993377"
@@ -187,7 +199,7 @@ export default function Portfolio() {
             </a>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
               <MapPin className="w-4 h-4" />
-              Swampscott, MA
+              Boston, MA
             </div>
           </div>
         </div>
@@ -204,17 +216,16 @@ export default function Portfolio() {
           </h2>
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
             <p className="text-lg leading-relaxed text-gray-700">
-              QA Automation Engineer with 6+ years of experience in Quality
-              Assurance, specializing in both manual and automated testing of
-              web applications. Gained initial QA experience on the job and
-              later deepened this expertise through a comprehensive QA
-              Automation bootcamp. Proficient in Selenium WebDriver, Cucumber,
-              Java, TestNG, Apache POI, and Maven. Experienced in functional,
-              regression, smoke, and API testing. Adept at implementing and
-              maintaining automation frameworks, leveraging tools like JUnit,
-              Cucumber, and various API testing utilities to ensure software
-              quality. Well-versed in both Agile (Scrum) and Waterfall
-              methodologies, with a strong focus on delivering robust, scalable,
+              QA Automation Engineer with over 5 years of experience in software
+              quality assurance, specializing in both manual and automated
+              testing of web-based applications. Skilled in Selenium WebDriver,
+              Cucumber, Java, TestNG, Maven, and Apache POI, with proven
+              expertise in designing, implementing, and maintaining robust
+              automation frameworks. Experienced in functional, regression,
+              smoke, and API testing, as well as leveraging tools like JUnit and
+              API testing utilities to optimize test coverage and efficiency.
+              Strong knowledge of Agile (Scrum) and Waterfall methodologies,
+              with a consistent track record of delivering scalable, reliable,
               and high-quality software solutions.
             </p>
           </div>
@@ -234,7 +245,10 @@ export default function Portfolio() {
                 key={idx}
                 className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition"
               >
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  {skillGroup.category === "AI Tools" && (
+                    <Brain className="w-5 h-5 text-indigo-600" />
+                  )}
                   {skillGroup.category}
                 </h3>
                 <ul className="space-y-2">
@@ -273,7 +287,8 @@ export default function Portfolio() {
                       {exp.title}
                     </h3>
                     <p className="text-lg text-blue-600 font-semibold mt-1">
-                      {exp.company} · {exp.type}
+                      {exp.company}
+                      {exp.type && ` · ${exp.type}`}
                     </p>
                   </div>
                   <div className="text-left md:text-right">
@@ -355,7 +370,7 @@ export default function Portfolio() {
                 <Award className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">
-                    Master of Arts in Archaeology
+                    Bachelor of Arts in History
                   </h3>
                   <p className="text-blue-600 font-semibold mt-1">
                     University of Tirana
@@ -369,7 +384,7 @@ export default function Portfolio() {
                 <Award className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-gray-900">
-                    Bachelor of Arts in History
+                    Master of Arts in Archaeology
                   </h3>
                   <p className="text-blue-600 font-semibold mt-1">
                     University of Tirana
@@ -390,14 +405,14 @@ export default function Portfolio() {
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a
-              href="mailto:everest.lacie@gmail.com"
+              href="mailto:everestslaci@gmail.com"
               className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition flex items-center gap-2"
             >
               <Mail className="w-5 h-5" />
               Email Me
             </a>
             <a
-              href="tel:9783354443"
+              href="tel:7744337857"
               className="bg-white/10 backdrop-blur-sm text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/20 transition flex items-center gap-2"
             >
               <Phone className="w-5 h-5" />
