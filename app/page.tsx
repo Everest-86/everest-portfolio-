@@ -216,7 +216,7 @@ export default function Portfolio() {
           </h2>
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
             <p className="text-lg leading-relaxed text-gray-700">
-              QA Automation Engineer with over 5 years of experience in software
+              QA Automation Engineer with over 6 years of experience in software
               quality assurance, specializing in both manual and automated
               testing of web-based applications. Skilled in Selenium WebDriver,
               Cucumber, Java, TestNG, Maven, and Apache POI, with proven
