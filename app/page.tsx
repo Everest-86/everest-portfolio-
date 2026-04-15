@@ -168,7 +168,7 @@ export default function Portfolio() {
             </div>
           </div>
           <p className="text-lg text-blue-50 max-w-3xl mt-6">
-            5+ years of experience in Quality Assurance specializing in
+            6+ years of experience in Quality Assurance specializing in
             automated testing of web applications • Selenium WebDriver •
             Cucumber BDD • Java • API Testing • CI/CD Integration • SQL Data
             Validation
