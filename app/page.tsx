@@ -13,6 +13,7 @@ import {
   GraduationCap,
   Award,
   Brain,
+  ExternalLink,
 } from "lucide-react";
 
 export default function Portfolio() {
@@ -112,6 +113,18 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "Clinic Agent",
+      description:
+        "AI-powered clinic assistant project showcasing agentic workflows and intelligent automation",
+      highlights: [
+        "Integrates AI agents for clinical task automation",
+        "Demonstrates modern agentic architecture patterns",
+        "End-to-end project available on GitHub",
+      ],
+      link: "https://github.com/Everest-86/clinic-agent",
+      linkLabel: "View on GitHub",
+    },
+    {
       title: "Selenium Hybrid Automation Framework",
       description:
         "A modular framework using Java, TestNG, Page Object Model, and Jenkins CI",
@@ -196,6 +209,15 @@ export default function Portfolio() {
             >
               <Linkedin className="w-4 h-4" />
               LinkedIn
+            </a>
+            <a
+              href="https://github.com/Everest-86"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg hover:bg-white/20 transition"
+            >
+              <Github className="w-4 h-4" />
+              GitHub
             </a>
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-lg">
               <MapPin className="w-4 h-4" />
@@ -334,13 +356,13 @@ export default function Portfolio() {
             {projects.map((project, idx) => (
               <div
                 key={idx}
-                className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition group"
+                className="bg-white rounded-xl shadow-lg p-6 border border-gray-100 hover:shadow-xl transition group flex flex-col"
               >
                 <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{project.description}</p>
-                <ul className="space-y-2">
+                <ul className="space-y-2 flex-grow">
                   {project.highlights.map((highlight, i) => (
                     <li
                       key={i}
@@ -351,6 +373,18 @@ export default function Portfolio() {
                     </li>
                   ))}
                 </ul>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-5 inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white rounded-lg font-medium text-sm hover:bg-gray-800 transition self-start"
+                  >
+                    <Github className="w-4 h-4" />
+                    {project.linkLabel || "View on GitHub"}
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                )}
               </div>
             ))}
           </div>
