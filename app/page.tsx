@@ -238,17 +238,21 @@ export default function Portfolio() {
           </h2>
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
             <p className="text-lg leading-relaxed text-gray-700">
-              QA Automation Engineer with over 6 years of experience in software
-              quality assurance, specializing in both manual and automated
-              testing of web-based applications. Skilled in Selenium WebDriver,
-              Cucumber, Java, TestNG, Maven, and Apache POI, with proven
-              expertise in designing, implementing, and maintaining robust
-              automation frameworks. Experienced in functional, regression,
-              smoke, and API testing, as well as leveraging tools like JUnit and
-              API testing utilities to optimize test coverage and efficiency.
-              Strong knowledge of Agile (Scrum) and Waterfall methodologies,
-              with a consistent track record of delivering scalable, reliable,
-              and high-quality software solutions.
+              QA Engineer with strong hands-on experience in software
+              quality assurance, including manual and automated testing,
+              API testing, database validation, and AI/LLM testing.
+              Skilled in Java, Selenium WebDriver, Playwright, Cucumber BDD,
+              TestNG, REST Assured, Postman, SQL, Maven, and Git. Experienced
+              in building and maintaining reusable frameworks, executing functional,
+              regression, integration,  and end-to-end testing, and supporting
+              automated testing within CI/CD pipelines using Jenkins and GitHub
+              Actions. Hands-on experience in testing LLM-powered
+              and conversational AI applications, including multi-turn conversations, 
+              response accuracy,
+              hallucination detection, groundedness, safety, fallback behavior,
+              and escalation logic. Strong knowledge of Agile/Scrum methodologies
+              and continuous-learning mindset focused on modern quality enginnering
+              and AI technologies.
             </p>
           </div>
         </section>
