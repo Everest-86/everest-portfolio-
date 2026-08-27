@@ -241,7 +241,7 @@ export default function Portfolio() {
       <section className="mx-auto grid max-w-6xl gap-8 px-6 py-20 md:grid-cols-[1fr_1.3fr] md:py-28">
         <div className="flex items-start gap-4"><div className="rounded-2xl bg-amber-100 p-3 text-amber-700"><GraduationCap className="h-6 w-6" /></div><div><p className="text-sm font-bold uppercase tracking-[.18em] text-indigo-600">Education</p><h2 className="mt-2 text-3xl font-black">A cross-disciplinary perspective</h2></div></div>
         <div className="grid gap-4 sm:grid-cols-2">
-          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><p className="font-black">Master of Arts in Archaeology</p><p className="mt-2 text-sm text-slate-500">University of Tirana · Tirana, Albania</p></div>
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><p className="font-black">Master of Science in Archaeology</p><p className="mt-2 text-sm text-slate-500">University of Tirana · Tirana, Albania</p></div>
           <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><p className="font-black">Bachelor of Arts in History</p><p className="mt-2 text-sm text-slate-500">University of Tirana · Tirana, Albania</p></div>
         </div>
       </section>
