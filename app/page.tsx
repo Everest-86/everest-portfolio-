@@ -49,37 +49,37 @@ const skillGroups = [
   {
     title: "Test Automation",
     icon: Code2,
-    items: ["Java", "Selenium WebDriver", "Playwright", "Cucumber BDD", "TestNG", "JUnit", "Page Object Model"],
+    items: ["Java", "Selenium WebDriver", "Cucumber BDD", "TestNG", "JUnit", "REST Assured"],
   },
   {
     title: "API & Data",
     icon: Database,
-    items: ["Postman", "REST Assured", "Swagger / OpenAPI", "SQL", "MySQL", "PostgreSQL", "JDBC"],
+    items: ["Postman", "REST APIs", "JDBC", "MySQL", "PostgreSQL", "SQL Validation"],
   },
   {
     title: "Quality Engineering",
     icon: TestTube2,
-    items: ["Functional", "Regression", "Smoke", "Integration", "End-to-End", "UAT", "Cross-Browser"],
+    items: ["Functional", "Regression", "Smoke", "API", "Integration", "Database", "BDD", "Data-Driven Testing", "Defect Investigation"],
   },
   {
     title: "Delivery & Tooling",
     icon: ShieldCheck,
-    items: ["Jenkins", "GitHub Actions", "Maven", "Git", "Jira", "Agile / Scrum", "CI/CD"],
+    items: ["Jenkins", "Git", "GitHub", "Maven", "Jira", "Agile / Scrum"],
   },
   {
-    title: "AI Application Testing",
+    title: "AI / LLM Quality",
     icon: BrainCircuit,
-    items: ["LLM Evaluation", "Multi-Turn Flows", "Hallucination Detection", "Groundedness", "Safety", "Fallback & Escalation"],
+    items: ["Conversational AI Testing", "Multi-Turn Testing", "Response Accuracy", "Context Retention", "Hallucination Evaluation", "Fallback Testing", "Escalation Testing"],
   },
 ];
 
 const projects = [
   {
-    eyebrow: "Featured project",
-    title: "AI Medical Voice Agent",
+    eyebrow: "Personal project",
+    title: "Medical Voice Agent",
     description:
-      "A clinic communication assistant for appointment reminders, confirmations, rescheduling, follow-up, administrative questions, and human escalation.",
-    highlights: ["React + FastAPI + PostgreSQL", "Twilio voice workflow", "OpenAI-powered conversations", "API, database, and safety testing"],
+      "A hands-on personal project exploring how traditional software QA practices can be applied to conversational AI and LLM-powered applications.",
+    highlights: ["Multi-turn conversation testing", "Response accuracy and context retention", "Hallucination and fallback testing", "Escalation scenario testing", "FastAPI and Python used through AI-assisted development"],
     link: "https://github.com/Everest-86/clinic-agent",
   },
   {
@@ -122,14 +122,14 @@ export default function Portfolio() {
           <div>
             <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-400/25 bg-emerald-400/10 px-3 py-1.5 text-sm text-emerald-300">
               <span className="h-2 w-2 rounded-full bg-emerald-400" />
-              Open to QA/SDET opportunities
+              Open to QA Automation, SDET & AI Quality opportunities
             </div>
-            <p className="mb-3 font-semibold uppercase tracking-[.2em] text-indigo-300">QA Automation Engineer · SDET</p>
+            <p className="mb-3 font-semibold uppercase tracking-[.2em] text-indigo-300">QA Automation Engineer · SDET · AI/LLM Quality</p>
             <h1 className="max-w-4xl text-5xl font-black leading-[1.02] tracking-[-0.04em] sm:text-6xl lg:text-7xl">
               I build confidence into every release.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">
-              I&apos;m Everest Laci, a quality engineer with 6+ years of experience testing web, API, database, and AI-powered applications—from hands-on exploration to maintainable automation.
+              I&apos;m Everest Laci, a QA Automation Engineer with 6+ years of experience testing web applications, APIs, databases, and automated software workflows across insurance and healthcare environments. I&apos;m currently expanding into AI/LLM quality engineering through hands-on personal project work.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
               <a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-indigo-500 px-6 py-3 font-bold transition hover:bg-indigo-400">
@@ -168,8 +168,8 @@ export default function Portfolio() {
           <h2 className="mt-3 text-4xl font-black tracking-tight text-slate-950">Quality that connects technology with real users.</h2>
         </div>
         <div className="space-y-5 text-lg leading-8 text-slate-600">
-          <p>I combine thoughtful manual testing with practical automation across UI, API, and database layers. My work includes test strategy, reusable frameworks, CI/CD execution, defect triage, release validation, and close collaboration with developers and product teams.</p>
-          <p>I also test conversational and LLM-powered applications for response accuracy, groundedness, multi-turn behavior, hallucinations, safety, fallback handling, and human escalation.</p>
+          <p>I combine thoughtful manual testing with practical automation across UI, API, and database layers. My experience includes Java-based test automation, Selenium WebDriver, Cucumber, REST API testing, SQL validation, regression testing, defect investigation, and close collaboration with developers and product teams.</p>
+          <p>I&apos;m also expanding into AI/LLM quality engineering through a personal Medical Voice Agent project, where I test multi-turn conversations, response accuracy, context retention, hallucinations, fallback behavior, and escalation scenarios.</p>
           <div className="grid grid-cols-3 gap-3 pt-4">
             {[['6+', 'Years in QA'], ['50+', 'BDD scenarios'], ['250+', 'Defects tracked']].map(([value, label]) => (
               <div key={label} className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
@@ -249,7 +249,7 @@ export default function Portfolio() {
       <section className="mx-auto max-w-6xl px-6 pb-20">
         <div className="rounded-[2rem] bg-gradient-to-r from-indigo-600 to-blue-600 px-7 py-12 text-center text-white shadow-2xl sm:px-12">
           <h2 className="text-3xl font-black sm:text-4xl">Let&apos;s build better software together.</h2>
-          <p className="mx-auto mt-4 max-w-2xl text-indigo-100">I&apos;m open to QA Automation Engineer, SDET, and Software Quality Engineer opportunities in the Boston area or remotely.</p>
+          <p className="mx-auto mt-4 max-w-2xl text-indigo-100">I&apos;m open to QA Automation Engineer, SDET, Software Quality Engineer, and AI Quality opportunities in the Boston area or remotely.</p>
           <a href="mailto:everestslaci@gmail.com" className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-bold text-indigo-700 transition hover:bg-indigo-50"><Mail className="h-4 w-4" /> Email me</a>
         </div>
       </section>
